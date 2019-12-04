@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<style>
+*
+{
+	box-sizing: border-box;
+}
+
+.column
+{
+	float: left;
+	width: 50%;
+	padding: 5px;
+	text-align: center;
+}
+
+.row::after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+footer
+{ 
+	font-family: monospace;
+    font-style: italic;
+}
+
+</style>
+		<title>Basics!</title>
+	</head>
+	<div class="tab" align="center">
+		<h1 style="color:White;font-size:80px">Basics!</h1>
+	</div>
+	<body style="background-color:pink;">
+		<div class="row">
+			<div class="column">
+				<img src="https://images-na.ssl-images-amazon.com/images/G/01/rainier/available_at_amazon_1200x600_Nvz5h2M.png" style="width=400px;height:200px">
+				<p><a href="https://amazon.com/">Amazon Link</a></p>
+			</div>
+			<div class="column">
+				<img src="https://c1.neweggimages.com/WebResource/Themes/2005/Nest/logo_424x210.png" style="width=400px;height=200px">
+				<p><a href="https://newegg.com/">Newegg Link</a></p>
+			</div>
+		</div>
+
+		<hr>
+		<footer align="right">
+			&copy; sako 2019
+		</footer>
+	</body>
+</html>

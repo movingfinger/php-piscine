@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Calculate Two Fields</h1>
+	<h1 id="answer"></h1>
+	Number 1 <input type="text" id="num1">
+	&nbsp;
+	&nbsp;
+	Operater <select id="operation">
+		<option value="plus">+</option>
+		<option value="minus">-</option>
+		<option value="multiply">*</option>
+		<option value="divide">/</option>
+		<option value="modulo">%</option>
+	</select>
+	&nbsp;
+	&nbsp;
+	Number 2 <input type="text" id="num2">
+	<br>
+	<br>
+	<input type="submit" onclick="calculate()" value="Try me!">
+	<script>
+		function calculate()
+		{
+			var field1=$("#num1").val();
+			var field2=$("#num2").val();
+			if (isNaN(field1) || isNaN(field2) || field1 < 0 || field2 < 0)
+			{
+				alert("Error :(");
+				console.log("Error :(");
+			}
+			let do_op=$("#operation").val();
+			switch (do_op)
+			{
+				case "plus":
+					var result=parseInt(field1)+parseInt(field2);
+					break;
+				case "minus":
+					var result=parseInt(field1)-parseInt(field2);
+					break;
+				case "multiply":
+					var result=parseInt(field1)*parseInt(field2);
+					break;
+				case "divide":
+					var result=parseInt(field1)/parseInt(field2);
+					break;
+				case "modulo":
+					var result=parseInt(field1)%parseInt(field2);
+					break;
+				default:
+			}if ((do_op == "divide" || do_op == "modulo") && (field2 == 0))
+			{
+				alert("It's over 9000!");
+				console.log("It's over 9000");
+			}
+			else
+			{
+				alert(result);
+				console.log("The answer is "+result);
+			}
+		}
+		setInterval(function() { alert("Please, use me..."); }, 30000);
+	</script>
+</body>
+</html>

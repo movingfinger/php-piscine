@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	div	{
+		background: rgb(255,0,0);
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border-radius: 50%;
+		display: inline-block;
+	}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="div1" data-ci='0' data-max="2"></div>
+	<script>
+		$("#div1").click(function() {
+			if ($(this).height() <= 420) {
+				$(this).height("+=10");
+				$(this).width("+=10");
+			}
+			else {
+				$(this).height("200px");
+				$(this).width("200px");
+			}
+			let colors = ["red", "green", "blue"];
+			let states = $(this).data('ci');
+			states++;
+			if (states > $(this).data('max'))
+				states = 0;
+			$(this).data('ci', states);
+			$(this).css('background-color', colors[states]);
+		});
+		$("#div1").mouseout(function() {
+			if ($(this).height() > 200)
+			{
+				$(this).height("-=5");
+				$(this).width("-=5");
+			}
+		});
+	</script>
+</body>
+</html>

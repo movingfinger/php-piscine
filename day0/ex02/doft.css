@@ -1,0 +1,247 @@
+body
+{
+	background-color: Dimgrey;
+}
+.div_ct
+{
+	height: 12vh;
+	width: 70vw;
+	background-color: #909090;
+	margin: auto;
+	border-radius: 1vh;
+	box-shadow: 0.5vw 1vh 0.5vw 0.05vw Black;
+}
+
+.div_c
+{
+	height: 60vh;
+	width: 45vw;
+	background-color: #909090;
+	margin-top: 3vh;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 1vh;
+	box-shadow: 0.5vw 1vh 0.5vw 0.05vw Black;
+}
+
+.div_left
+{
+	height: 46vh;
+	width: 7vw;
+	float: left;
+	margin-top: 3vh;
+	margin-left: 35vh;
+	background-color: #909090;
+	border-radius: 1vh;
+	box-shadow: 0.5vw 1vh 0.5vw 0.05vw Black;
+}
+
+.div_right
+{
+	height: 46vh;
+	width: 7vw;
+	float: right;
+	margin-top: 3vh;
+	margin-right: 35vh;
+	background-color: #909090;
+	border-radius: 1vh;
+	box-shadow: 0.5vw 1vh 0.5vw 0.05vw Black;
+}
+
+.div_interact
+{
+	position: absolute;
+	height: 16vh;
+	width: 24vw;
+	float: right;
+	margin-top: -7vh;
+	margin-left: 31vh;
+	background-color: #A6FC96;
+	border-radius: 1vh;
+	box-shadow: 0.5vw 1vh 0.5vw 0.05vw Black;
+}
+
+p.a
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 15px;
+	line-height: 0px;
+	font-size: 1.5em;
+	color: Black;
+}
+
+span.b
+{
+	line-height: 1px;
+	font: 2.5em bold;
+	color: Black;
+}
+
+p.c
+{
+	margin-left: 15px;
+	line-height: 1px;
+	font-size: 1.5em;
+	font-style: italic;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	color: Black;
+}
+
+span.d
+{
+	line-height: 1px;
+	text-shadow: 4px 5px 4px #ff0000;
+}
+
+input
+{
+	margin-left: 1vw;
+	width: 17vw;
+	height: 1.5vh;
+}
+
+.button
+{
+	font-size: 1em;
+	width: 4vw;
+	height: 2vh;
+}
+
+.img_ct_42
+{
+	position: relative;
+	TOP: -1vh;
+	BOTTOM: 1vh;
+	LEFT: 0.5vw;
+	width:22vw;
+	height:10vh;
+}
+
+.img_ct_loupe
+{
+	position: relative;
+	TOP: 1.5vh;
+	BOTTOM: 1vh;
+	LEFT: 34vw;
+	width:12vw;
+	height:12vh;
+}
+
+.img_ct_reload
+{
+	position: relative;
+	TOP: -10vh;
+	BOTTOM: 0vh;
+	LEFT: 34vw;
+	width:1vw;
+	height:1.1vh;
+}
+
+.img_ct_close
+{
+	position: relative;
+	TOP: -1vh;
+	BOTTOM: 0vh;
+	LEFT: 32.8vw;
+	width:1vw;
+	height:1.1vh;
+}
+
+.img_left_arrow
+{
+	position: relative;
+	display: block;
+	margin-top: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+}
+
+.img_left_main
+{
+	position: relative;
+	display: block;
+	margin-top: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+}
+
+.img_left_oeil
+{
+	position: relative;
+	display: block;
+	margin-top: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+}
+
+.img_left_oeil:hover
+{
+	border: 5px solid red;
+	border-radius: 3px;
+}
+
+.img_left_outil
+{
+	position: relative;
+	display: block;
+	margin-top: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+}
+
+.img_left_chat-icon
+{
+	position: relative;
+	display: block;
+	margin-top: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+}
+
+.img_c_cluster
+{
+	position: relative;
+	padding: 16px;
+	width: 97%;
+	height: 96%;
+}
+
+
+.img_right_book
+{
+	position: relative;
+	display: block;
+	margin-top: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+}
+
+.img_right_towel
+{
+	position: relative;
+	display: block;
+	margin-top: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+}
+
+.img_right_brick
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2vh;
+	width: 6vw;
+	height: 7vh;
+	background-image: url("resources/brick.jpg");
+	background-repeat: repeat;
+}

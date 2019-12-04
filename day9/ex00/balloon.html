@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	div	{
+		background: rgb(255,0,0);
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border-radius: 50%;
+		display: inline-block;
+	}
+	</style>
+</head>
+<body>
+	<div onclick="resizeCircle(this)" onmouseout="smallCircle(this)"></div>
+	<script>
+		function resizeCircle(el) {
+			var hc = parseInt(el.clientHeight);
+			var wc = parseInt(el.clientWidth);
+			hc += 10;
+			wc += 10;
+			if (hc <= 420 && wc <= 420) {
+				el.style.height = hc + 'px';
+				el.style.width = wc + 'px';
+			}
+			else {
+				el.style.height = 200 + 'px';
+				el.style.width = 200 + 'px';
+			}
+			setColor(el);
+		}
+		var backgrounds = ["green", "blue", "red"]; 
+		function setColor(el) { 
+			el.colorIdx = el.colorIdx || 0; 
+			el.style.backgroundColor = backgrounds[el.colorIdx++ % backgrounds.length]; 
+		}
+		function smallCircle(el) {
+			var hc = parseInt(el.clientHeight);
+			var wc = parseInt(el.clientWidth);
+			hc -= 5;
+			wc -= 5;
+			if (hc > 200 || wc > 200)
+			{
+				el.style.height = hc + 'px';
+				el.style.width = wc + 'px';
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+	background-image: url("https://previews.123rf.com/images/gow27/gow271601/gow27160100107/50745243-chemistry-science-theory-and-bonding-formula-equation-doodle-handwriting-and-tool-model-icon-in-whit.jpg");
+	background-color: #cccccc;
+}
+
+h2
+{
+    color: Red;
+    font-size: 2vw;
+}
+
+table
+{
+    width: 100%;
+}
+
+td
+{
+    width: 5.55%;
+    position: relative;
+}
+
+td:after
+{
+    content: '';
+    display: block;
+    margin-top: 100%;
+}
+
+td .content
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: gold;
+}
+
+td .nonmetals
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: gold;
+}
+
+td .alkali-metals
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: Red;
+}
+
+td .alkalie-earth-metals
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffcc99;
+}
+
+td .transition-metals
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ff6666;
+}
+
+td .post-transition-metals
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #99ff99;
+}
+
+td .metalsloid
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #A9A9A9;
+}
+
+td .lanthanides
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: Pink;
+}
+
+td .actinides
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ff66ff;
+}
+
+td .halogens
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #cc9900;
+}
+
+td .noble-gases
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #99ccff;
+}
+
+td .empty
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+td .aw
+{
+    font-size: 0.5vw;
+    height: 0%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: right;
+}
+
+td .se
+{
+    font-size: 3vw;
+    height: 50%;
+	margin-right: 5%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+td .an
+{
+    font-size: 0.5vw;
+    height: 0%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: left;
+}
